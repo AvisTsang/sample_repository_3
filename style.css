@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+    margin : 0;
+    box-sizing: border-box;
+    font-family: "ubuntu";
+    scroll-behavior: smooth;
+}
+
+nav{
+    display :flex ;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 20px 0px;
+}
+
+nav .logo{
+    padding : 0px 150px;
+}
+
+nav .nav_Link{
+    padding : 0px 150px;
+}
+
+nav a{
+    margin-left : 5px;
+    text-decoration: none;
+    color : rgb(36, 36, 36);
+    font-weight: 500;
+    transition: color 0.375s ease;
+}
+
+nav .nav_Link a{
+    padding-left: 15px;
+    
+}
+
+nav .nav_Link a:hover,
+nav .nav_Link a.selected{
+    color: rgb(70, 70, 208);
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding : 0 150px;
+    gap : 50px;
+    height: calc(100vh - 60px) ;
+}
+
+.main .left h2{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.main .left p{
+    font-size: 18px;
+    width : 100%;
+    margin-bottom: 20px;
+}
+
+.main .left button,
+.blog_container .card_container .card .more button{
+    background : rgb(47, 64, 189);
+    color : white;
+    padding : 10px 20px;
+    margin-left: 5px;
+    border : 2px solid transparent;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: background-color 0.375s ease;
+    cursor: pointer;
+}
+
+
+.main .left button:hover,
+.blog_container .card_container .card .more button:hover{
+    background-color :  rgb(77, 96, 247);
+}
+
+.main img,
+.about .about_container .about_me img{
+    object-fit: cover;
+    width : 400px ;
+    height : 400px ;
+    border-radius: 50px;
+}
+
+
+.recent_post{
+    background-color: rgb(232, 249, 255);
+    display: flex;
+    flex-direction: column;
+    padding :  50px 150px ;
+}
+
+
+.recent_post .recent_post_title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.recent_post .recent_post_title a{
+    text-decoration: none;
+    color : rgb(46, 92, 230);
+}
+
+.recent_post .card_container{
+    display: flex;
+    justify-content: space-around;
+    gap : 10px;
+    margin-top: 50px;
+}
+
+.recent_post .card_container .card
+{
+    width : 500px;
+    background-color: #ffffffc4;
+    padding : 20px 20px;
+    border-radius: 10px;
+}
+
+.recent_post .card_container .card h2,
+.blog_container .card_container .card h2{
+   font-size: 25px;
+
+}
+
+.about .about_container .about_me h2{
+    font-size: 35px;
+    animation: typing infinite;
+}
+
+.about .about_container .about_me h3{
+    margin-top : 20px;
+}
+
+
+.recent_post .card_container .card p,
+.blog_container .card_container .card p,
+.about .about_container .about_me .right p{
+   margin-top: 15px;
+    font-size: 16px;
+    color : rgb(117, 117, 117);
+    font-weight: 400;
+}
+
+.featured_work_container,.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding : 50px 150px 0px 150px;
+}
+
+.featured_work_container .title ,
+.blog_container .title,
+.about .title{
+    font-size: 20px;
+    font-weight: 100;
+
+}
+
+.featured_work_container .showcase_container,
+.blog_container .card_container,
+.about .about_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding : 80px 100px 0px 100px;
+}
+
+.featured_work_container .showcase_container .showcase{
+    display : flex ;
+    flex-direction: row;
+    margin-top : 50px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(84, 84, 84);
+}
+
+.featured_work_container .showcase_container .showcase:first-child{
+    margin-top : 0px;
+}
+
+.featured_work_container .showcase_container .showcase:last-child{
+    margin-bottom : 0px;
+
+}
+
+.featured_work_container .showcase_container .showcase img{
+    width : 300px;
+    height : 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.featured_work_container .showcase_container .showcase .right{
+    margin-left : 80px;
+    
+}
+
+.featured_work_container .showcase_container .showcase .right h1,.container h2{
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.featured_work_container .showcase_container .showcase .right .years,
+.container .years{
+
+    background-color: rgb(47, 64, 189);
+    color : #fff;
+    padding : 5px 15px;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+.featured_work_container .showcase_container .showcase .right .skills,
+.container .skills{
+
+    color : rgb(117, 117, 117);
+
+}
+
+.featured_work_container .showcase_container .showcase .right p,
+.container p{
+    
+    color : rgb(45, 45, 45);
+    margin-top: 15px;
+}
+
+
+footer{
+    height : 200px;
+    display :flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .icon{
+    margin-bottom : 20px ;
+}
+
+
+footer p{
+    font-size: 12px;
+    font-weight: 300;
+}
+
+
+.container {
+    padding : 50px 150px ;
+}
+
+.container .content{
+    padding : 50px 50px ;
+    
+}
+
+
+.container .content .img_container{
+    width : 100%;
+    display :flex ;
+    justify-content: center;
+    padding : 50px 0px;
+}
+
+.container .content img{
+    height : 500px;
+    width : 500px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+.blog_container{
+    display: flex;
+    flex-direction: column;
+    padding : 50px 150px;
+
+}
+
+.blog_container .card_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap : 50px;
+}
+
+.blog_container .card_container .card{
+    background-color: rgb(232, 249, 255);
+    padding : 20px 30px;
+    border-radius: 20px;
+
+}
+
+.blog_container .card_container .card .more{
+    margin-top: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap : 10px;
+}
+
+
+.about .about_container .about_me {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 100px;
+    width : 1200px;
+    background-color: rgb(232, 249, 255);
+    border-radius: 20px;
+    gap : 50px;
+}
+
+
+
+.btn_up{
+    display: none;
+    font-size: 50px;
+    height : 80px;
+    width : 80px;
+    border:none;
+    border-radius: 50%;
+    background-color:  rgb(47, 64, 189);
+    color : white;
+    position:fixed;
+    right : 10px;
+    bottom : 10px;
+    cursor:pointer;
+    transition: background-color 0.275s ease;
+}
+
+.btn_up:hover{
+    background-color:rgb(77, 96, 247) ;
+}
